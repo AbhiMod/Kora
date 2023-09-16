@@ -180,7 +180,7 @@ def gban(update: Update, context: CallbackContext):
         chat_origin = "<b>{}</b>\n".format(chat.id)
 
     log_message = (
-        f"*New Gban Request in Yone*\n"
+        f"*New Gban Request in Kora*\n"
         f"#GBAN_REQUEST\n"
         f"<b>Originated from:</b> <code>{chat_origin}</code>\n"
         f"<b>Request Admin:</b> {mention_html(user.id, user.first_name)}\n"
