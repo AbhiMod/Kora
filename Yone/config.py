@@ -40,7 +40,7 @@ class Config(object):
     WORKERS = 20
     ALLOW_EXCL = True
     ALLOW_CHATS = True
-    PHOTO = "https://graph.org/file/46fbf10b1caaade4c4ba8.jpg" # Miss Poppy Music Pic
+    PHOTO = "https://graph.org/file/4d325b62578e7005a3b05.jpg" # Miss Poppy Music Pic
     INFOPIC = True
 
 
