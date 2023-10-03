@@ -74,7 +74,7 @@ if ENV:
     BOT_USERNAME = os.environ.get("BOT_USERNAME", "Kora_Xbot")
     BOT_NAME = os.environ.get("BOT_NAME", "Kora")
     LOAD = os.environ.get("LOAD", "").split()
-    NO_LOAD = os.environ.get("NO_LOAD","afk")split()
+    NO_LOAD = os.environ.get("NO_LOAD","afk").split()
 
     DEL_CMDS = bool(os.environ.get("DEL_CMDS", True))
     INFOPIC = bool(os.environ.get("INFOPIC", False))
