@@ -154,7 +154,7 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup([
     [
         InlineKeyboardButton(
-            text="➕️ Add me to your chat ➕️", url=f"https://t.me/{context.bot.username}?startgroup=true"),
+            text="➕️ ᴀᴅᴅ ᴍᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ", url=f"https://t.me/{context.bot.username}?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="Admin", callback_data="admin_back"),
@@ -169,7 +169,15 @@ def start(update: Update, context: CallbackContext):
         ),
     ],
     [
+        InlineKeyboardButton(
+            text="Owner", url="https://t.me/sultan11100"),
+    ],
+    [
         InlineKeyboardButton(text="Helps & Commands❔", callback_data="help_back"),
+    ],
+    [
+        InlineKeyboardButton(
+            text="Chat Group", url="https://t.me/+DJPN6RWqdGA3NTI1"),
     ],
 ]),
                 parse_mode=ParseMode.MARKDOWN,
@@ -245,7 +253,7 @@ def yone_about_callback(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup([
     [
         InlineKeyboardButton(
-            text="➕️ Add me to your chat ➕️", url=f"https://t.me/{context.bot.username}?startgroup=true"),
+            text="➕️ ᴀᴅᴅ ᴍᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ", url=f"https://t.me/{context.bot.username}?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="Admin", callback_data="admin_back"),
@@ -260,7 +268,15 @@ def yone_about_callback(update: Update, context: CallbackContext):
         ),
     ],
     [
+        InlineKeyboardButton(
+            text="Owner", url="https://t.me/sultan11100"),
+    ],
+    [
         InlineKeyboardButton(text="Helps & Commands❔", callback_data="help_back"),
+    ],
+    [
+        InlineKeyboardButton(
+            text="Chat Group", url="https://t.me/+DJPN6RWqdGA3NTI1"),
     ],
 ]),
                 parse_mode=ParseMode.MARKDOWN,
