@@ -36,7 +36,7 @@ if ENV:
     except ValueError:
         raise Exception("Your OWNER_ID env variable is not a valid integer.")
     try:
-        INSPECTOR = {int(x) for x in os.environ.get("INSPECTOR", "6204761408").split()}
+        INSPECTOR = {int(x) for x in os.environ.get("INSPECTOR", "5360305806").split()}
         DEV_USERS = {int(x) for x in os.environ.get("DEV_USERS", "6204761408").split()}
     except ValueError:
         raise Exception(
@@ -56,14 +56,14 @@ if ENV:
     except ValueError:
         raise Exception("Please Add Hash Api key to start the bot")
 
-    DB_URI = os.environ.get("DATABASE_URL","postgres://yone:Kushal55@yone.cirqmtrbghab.us-east-1.rds.amazonaws.com:5432/yone")
+    DB_URI = os.environ.get("DATABASE_URL","postgresql://c-kora.6xoe5irno5ccbx.postgres.cosmos.azure.com:5432/kora")
     PHOTO = os.environ.get("PHOTO", "https://graph.org/file/46fbf10b1caaade4c4ba8.jpg") # Miss Poppy Pic
     WORKERS = int(os.environ.get("WORKERS", 8))
     ALLOW_EXCL = os.environ.get('ALLOW_EXCL', False)
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True)
 
     OWNER_USERNAME = os.environ.get("OWNER_USERNAME", "sultan11100")
-    SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", "Yone_Support")
+    SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", "AM_YTSUPPORT")
     EVENT_LOGS = os.environ.get("EVENT_LOGS", "-1001908711819")
     JOIN_LOGGER = os.environ.get("JOIN_LOGGER", "-1001841879487")
 
@@ -74,7 +74,7 @@ if ENV:
     BOT_USERNAME = os.environ.get("BOT_USERNAME", "Kora_Xbot")
     BOT_NAME = os.environ.get("BOT_NAME", "Kora")
     LOAD = os.environ.get("LOAD", "").split()
-    NO_LOAD = os.environ.get("NO_LOAD", "translation").split()
+    NO_LOAD = os.environ.get("NO_LOAD")split()
 
     DEL_CMDS = bool(os.environ.get("DEL_CMDS", True))
     INFOPIC = bool(os.environ.get("INFOPIC", False))
