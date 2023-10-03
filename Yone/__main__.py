@@ -169,15 +169,11 @@ def start(update: Update, context: CallbackContext):
         ),
     ],
     [
-        InlineKeyboardButton(
-            text="Owner", url="https://t.me/sultan11100"),
+        InlineKeyboardButton(text="Owner", url="https://t.me/sultan11100"),
+        InlineKeyboardButton(text="Chat Group", url="https://t.me/+DJPN6RWqdGA3NTI1"),
     ],
     [
         InlineKeyboardButton(text="Helps & Commands❔", callback_data="help_back"),
-    ],
-    [
-        InlineKeyboardButton(
-            text="Chat Group", url="https://t.me/+DJPN6RWqdGA3NTI1"),
     ],
 ]),
                 parse_mode=ParseMode.MARKDOWN,
@@ -268,15 +264,11 @@ def yone_about_callback(update: Update, context: CallbackContext):
         ),
     ],
     [
-        InlineKeyboardButton(
-            text="Owner", url="https://t.me/sultan11100"),
+        InlineKeyboardButton(text="Owner", url="https://t.me/sultan11100"),
+        InlineKeyboardButton(text="Chat Group", url="https://t.me/+DJPN6RWqdGA3NTI1"),
     ],
     [
         InlineKeyboardButton(text="Helps & Commands❔", callback_data="help_back"),
-    ],
-    [
-        InlineKeyboardButton(
-            text="Chat Group", url="https://t.me/+DJPN6RWqdGA3NTI1"),
     ],
 ]),
                 parse_mode=ParseMode.MARKDOWN,
