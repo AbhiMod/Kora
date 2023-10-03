@@ -22,9 +22,9 @@ class Config(object):
     BOT_NAME = "Kora"
     # 
     # DATABASE_URL = "postgres://ixweewbx:9OoB_feF6d6wK1W4YycgwHzRHQXezsNA@arjuna.db.elephantsql.com/ixweewbx"  # sql
-    DATABASE_URL = "postgres://yone:Kushal55@yone.cirqmtrbghab.us-east-1.rds.amazonaws.com:5432/yone"  # sql
+    DATABASE_URL = "postgresql://c-kora.6xoe5irno5ccbx.postgres.cosmos.azure.com:5432/kora"  # sql
     LOAD = []
-    NO_LOAD = ["rss", "math"]
+    NO_LOAD = []
     WEBHOOK = False
     REDIS_URL = "redis://default:725m47dhlmisA0QecURSMkcHNGXkM1uP@redis-15808.c275.us-east-1-4.ec2.cloud.redislabs.com:15808"
 
