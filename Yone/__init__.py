@@ -57,7 +57,7 @@ if ENV:
         raise Exception("Please Add Hash Api key to start the bot")
 
     DB_URI = os.environ.get("DATABASE_URL","postgresql://c-kora.6xoe5irno5ccbx.postgres.cosmos.azure.com:5432/kora")
-    PHOTO = os.environ.get("PHOTO", "https://graph.org/file/46fbf10b1caaade4c4ba8.jpg") # Miss Poppy Pic
+    PHOTO = os.environ.get("PHOTO", "https://graph.org/file/4d325b62578e7005a3b05.jpg") # Miss Poppy Pic
     WORKERS = int(os.environ.get("WORKERS", 8))
     ALLOW_EXCL = os.environ.get('ALLOW_EXCL', False)
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True)
