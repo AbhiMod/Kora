@@ -12,4 +12,4 @@ COPY . .
 
 ENTRYPOINT ["/usr/bin/tini", "--"]
 
-CMD [ "python3", "-m" , "Yone"]
+CMD [ "python3", "kora.py"]
