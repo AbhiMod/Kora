@@ -157,23 +157,23 @@ def start(update: Update, context: CallbackContext):
             text="➕️ ᴀᴅᴅ ᴍᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ", url=f"https://t.me/{context.bot.username}?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="Admin", callback_data="admin_back"),
+        InlineKeyboardButton(text="ᴀᴅᴍɪɴꜱ", callback_data="admin_back"),
         InlineKeyboardButton(
-            text="Users", callback_data="user_back"
+            text="ᴜꜱᴇʀꜱ", callback_data="user_back"
         ),
     ],
     [
-        InlineKeyboardButton(text="Tools", callback_data="tools_back"),
+        InlineKeyboardButton(text="ᴛᴏᴏʟꜱ", callback_data="tools_back"),
         InlineKeyboardButton(
-            text="Gbans", url="https://t.me/Logs_Gban"
+            text="ɢʙᴀɴꜱ ʟᴏɢꜱ", url="https://t.me/Logs_Gban"
         ),
     ],
     [
-        InlineKeyboardButton(text="Owner", url="https://t.me/sultan11100"),
-        InlineKeyboardButton(text="Chat Group", url="https://t.me/+DJPN6RWqdGA3NTI1"),
+        InlineKeyboardButton(text="ᴏᴡɴᴇʀ 💕", url="https://t.me/sultan11100"),
+        InlineKeyboardButton(text="💌 ᴄʜᴀᴛ ɢʀᴏᴜᴘ", url="https://t.me/+DJPN6RWqdGA3NTI1"),
     ],
     [
-        InlineKeyboardButton(text="Helps & Commands❔", callback_data="help_back"),
+        InlineKeyboardButton(text="ʜᴇʟᴘꜱ & ᴄᴏᴍᴍᴀɴᴅꜱ❔", callback_data="help_back"),
     ],
 ]),
                 parse_mode=ParseMode.MARKDOWN,
@@ -252,23 +252,23 @@ def yone_about_callback(update: Update, context: CallbackContext):
             text="➕️ ᴀᴅᴅ ᴍᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ", url=f"https://t.me/{context.bot.username}?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="Admin", callback_data="admin_back"),
+        InlineKeyboardButton(text="ᴀᴅᴍɪɴꜱ ", callback_data="admin_back"),
         InlineKeyboardButton(
-            text="Users", callback_data="user_back"
+            text="ᴜꜱᴇʀꜱ", callback_data="user_back"
         ),
     ],
     [
-        InlineKeyboardButton(text="Tools", callback_data="tools_back"),
+        InlineKeyboardButton(text="ᴛᴏᴏʟꜱ", callback_data="tools_back"),
         InlineKeyboardButton(
-            text="Bot Info", callback_data="yone_"
+            text="ʙᴏᴛ ɪɴꜰᴏ", callback_data="yone_"
         ),
     ],
     [
-        InlineKeyboardButton(text="Owner", url="https://t.me/sultan11100"),
-        InlineKeyboardButton(text="Chat Group", url="https://t.me/+DJPN6RWqdGA3NTI1"),
+        InlineKeyboardButton(text="ᴏᴡɴᴇʀ 💕", url="https://t.me/sultan11100"),
+        InlineKeyboardButton(text="💌 ᴄʜᴀᴛ ɢʀᴏᴜᴘ", url="https://t.me/+DJPN6RWqdGA3NTI1"),
     ],
     [
-        InlineKeyboardButton(text="Helps & Commands❔", callback_data="help_back"),
+        InlineKeyboardButton(text="ʜᴇʟᴘꜱ & ᴄᴏᴍᴍᴀɴᴅꜱ❔", callback_data="help_back"),
     ],
 ]),
                 parse_mode=ParseMode.MARKDOWN,
