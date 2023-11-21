@@ -1,4 +1,4 @@
-import requests, config
+import requests
 from pyrogram import filters
 import Yone
 from pyrogram.enums import ChatAction, ParseMode
