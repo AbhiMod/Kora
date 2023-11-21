@@ -1,9 +1,8 @@
 import requests, config
 from pyrogram import filters
-from Yone import app
+import Yone
 from pyrogram.enums import ChatAction, ParseMode
-from config import *
-
+from Yone import OWNER_ID, DEEP_API, pbot as app
 api_key = DEEP_API
 
 
