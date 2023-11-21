@@ -3,7 +3,7 @@ import glob
 import io
 import random
 import requests
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont, ImageOps
 from Yone import dispatcher
 from Yone import BOT_USERNAME, OWNER_ID,BOT_NAME, OWNER_ID, telethn
 from Yone.Plugins.disable import DisableAbleCommandHandler
