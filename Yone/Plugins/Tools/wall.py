@@ -4,8 +4,7 @@ import requests
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
-from Yone import telethn as pbot
-
+from Yone import app as pbot
 @pbot.on_message(filters.command(["wall", "wallpaper"]))
 async def wall(_, message: Message):
     " ғɪxᴇᴅ ᴡᴀʟʟ ʙʏ ᴍᴜᴋᴇsʜ"
