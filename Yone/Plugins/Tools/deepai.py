@@ -32,3 +32,12 @@ async def deepchat(app: app, message):
             await message.reply_text(f"{answer_text}")
     except Exception as e:
         await message.reply_text(f"**ᴇʀʀᴏʀ**: {e}")
+
+
+__help__ = """img Gen.
+*Commands*:
+‣ `/deep`*:* Your Text
+  """
+
+__mod_name__ = "DeepAI"
+
