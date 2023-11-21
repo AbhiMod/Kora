@@ -33,7 +33,7 @@ async def deepchat(app: app, message):
         await message.reply_text(f"**ᴇʀʀᴏʀ**: {e}")
 
 
-__help__ = """img Gen.
+__help__ = """ask any this 
 *Commands*:
 ‣ `/deep`*:* Your Text
   """
