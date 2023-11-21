@@ -61,7 +61,8 @@ if ENV:
     WORKERS = int(os.environ.get("WORKERS", 8))
     ALLOW_EXCL = os.environ.get('ALLOW_EXCL', False)
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True)
-
+    DEEP_API = os.environ.get("DEEP_API","c8e3d7fc-1f7e-455b-8019-5c1b7f21047a")
+    OPENAI_KEY = os.environ.get("OPENAI_KEY","")
     OWNER_USERNAME = os.environ.get("OWNER_USERNAME", "sultan11100")
     SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", "AM_YTSUPPORT")
     EVENT_LOGS = os.environ.get("EVENT_LOGS", "-1001908711819")
@@ -113,6 +114,8 @@ else:
     CERT_PATH = Config.CERT_PATH
     API_ID = Config.API_ID
     API_HASH = Config.API_HASH
+    DEEP_API = Config.DEEP_API
+    OPENAI_KEY = Config.OPENAI_KEY
     DB_URI = Config.DATABASE_URL
     STRICT_GBAN = Config.STRICT_GBAN
     BOT_USERNAME = Config.BOT_USERNAME
