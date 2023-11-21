@@ -5,23 +5,20 @@ import random
 import requests
 from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont, ImageOps
 from Yone import dispatcher
-from Yone import BOT_USERNAME, OWNER_ID, BOT_NAME, telethn
+from telethon.tl.types import ChatBannedRights
+from telethon import TelegramClient, events, Button
+from Yone import OWNER_ID, telethn, BOT_NAME, SUPPORT_CHAT, BOT_USERNAME
 from Yone.Plugins.disable import DisableAbleCommandHandler
 from telegram import Update, ParseMode
 from Yone.events import register
 from telegram.ext import CallbackContext, run_async
 from Yone.Handlers.validation import validation_of_user
 from PIL import Image, ImageDraw, ImageFont
-from pyrogram import filters
-from pyrogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup, Message
-SUPPORT_CHAT = "AM_YTSUPPORT"
+
 button_row = [
-    [
-        InlineKeyboardButton("Owner", url="https://t.me/sultan11100"),
-        InlineKeyboardButton("Meet Me Here", url="https://t.me/+fTLiKLLzw-ZmZTk1"),
-    ],
-   
-]
+        [Button.url('Aᴅᴅ Mᴇ Yᴏᴜʀ Gʀᴏᴜᴘ', f'https://t.me/{BOT_USERNAME}?startgroup=new')]
+    ]
+
 LOGO_LINKS = [
     "https://telegra.ph/file/d1838efdafce9fe611d0c.jpg",
     "https://telegra.ph/file/c1ff2d5ec5e1b5bd1b200.jpg",
@@ -270,7 +267,7 @@ async def lego(event):
         img = Image.open(io.BytesIO(requests.get(randc).content))
         draw = ImageDraw.Draw(img)
         image_widthz, image_heightz = img.size
-        fnt = glob.glob("./Yone/resources/fonts/*")
+        fnt = glob.glob("./MukeshRobot/resources/fonts/*")
         randf = random.choice(fnt)
         font = ImageFont.truetype(randf, 120)
         bbox= draw.textbbox((0,0),text, font=font)
