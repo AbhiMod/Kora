@@ -12,7 +12,16 @@ from Yone.events import register
 from telegram.ext import CallbackContext, run_async
 from Yone.Handlers.validation import validation_of_user
 from PIL import Image, ImageDraw, ImageFont
-
+from pyrogram import filters
+from pyrogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup, Message
+SUPPORT_CHAT = "AM_YTSUPPORT"
+button_row = [
+    [
+        InlineKeyboardButton("Owner", url="https://t.me/sultan11100"),
+        InlineKeyboardButton("Meet Me Here", url="https://t.me/+fTLiKLLzw-ZmZTk1"),
+    ],
+   
+]
 LOGO_LINKS = [
     "https://telegra.ph/file/d1838efdafce9fe611d0c.jpg",
     "https://telegra.ph/file/c1ff2d5ec5e1b5bd1b200.jpg",
