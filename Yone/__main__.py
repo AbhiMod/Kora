@@ -48,14 +48,17 @@ user_help_button,
 send_settings,
 admin_help_button,
 tools_help_button,
+toolss_help_button,
 send_tools_help,
+send_toolss_help,
 HELP_STRINGS,
 IMPORTED,
 IMPORTED,
 HELPABLE,
 ADMIN,
 USER,
-TOOLS )
+TOOLS,
+TOOLSS)
 
 
 def get_readable_time(seconds: int) -> str:
@@ -134,6 +137,13 @@ def start(update: Update, context: CallbackContext):
                         [[InlineKeyboardButton(text="⬅️ BACK", callback_data="tools_back")]]
                     ),
                 )
+                send_toolss_help(
+                    update.effective_chat.id,
+                    USER[mod].__help__,
+                    InlineKeyboardMarkup(
+                        [[InlineKeyboardButton(text="⬅️ BACK", callback_data="toolss_back")]]
+                    ),
+                )
 
             elif args[0].lower().startswith("stngs_"):
                 match = re.match("stngs_(.*)", args[0].lower())
@@ -164,16 +174,16 @@ def start(update: Update, context: CallbackContext):
     ],
     [
         InlineKeyboardButton(text="ᴛᴏᴏʟꜱ", callback_data="tools_back"),
-        InlineKeyboardButton(
-            text="ɢʙᴀɴꜱ ʟᴏɢꜱ", url="https://t.me/Logs_Gban"
-        ),
     ],
     [
         InlineKeyboardButton(text="ᴏᴡɴᴇʀ 💕", url="https://t.me/sultan11100"),
         InlineKeyboardButton(text="💌 ᴄʜᴀᴛ ɢʀᴏᴜᴘ", url="https://t.me/+jCS-YsVBVEE3NjQ1"),
     ],
     [
-        InlineKeyboardButton(text="ʜᴇʟᴘꜱ & ᴄᴏᴍᴍᴀɴᴅꜱ❔", callback_data="help_back"),
+        InlineKeyboardButton(text="ʜᴇʟᴘꜱ ᴄᴏᴍᴍᴀɴᴅꜱ❔", callback_data="help_back"),
+    ],
+    [
+        InlineKeyboardButton(text="ᴍᴜꜱɪᴄ ᴄᴏᴍᴍᴀɴᴅꜱ ❔", callback_data="toolss_back"),
     ],
 ]),
                 parse_mode=ParseMode.MARKDOWN,
@@ -264,11 +274,10 @@ def yone_about_callback(update: Update, context: CallbackContext):
         ),
     ],
     [
-        InlineKeyboardButton(text="ᴏᴡɴᴇʀ 💕", url="https://t.me/sultan11100"),
-        InlineKeyboardButton(text="💌 ᴄʜᴀᴛ ɢʀᴏᴜᴘ", url="https://t.me/+DJPN6RWqdGA3NTI1"),
+        InlineKeyboardButton(text="ʜᴇʟᴘꜱ ᴄᴏᴍᴍᴀɴᴅꜱ❔", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="ʜᴇʟᴘꜱ & ᴄᴏᴍᴍᴀɴᴅꜱ❔", callback_data="help_back"),
+        InlineKeyboardButton(text="ᴍᴜꜱɪᴄ ᴄᴏᴍᴍᴀɴᴅꜱ ❔", callback_data="toolss_back"),
     ],
 ]),
                 parse_mode=ParseMode.MARKDOWN,
@@ -297,7 +306,7 @@ def main():
     admin_help_callback_handler = CallbackQueryHandler(admin_help_button, pattern=r"admin_.*", run_async=True)
     user_help_callback_handler = CallbackQueryHandler(user_help_button, pattern=r"user_.*", run_async=True)
     tools_help_callback_handler = CallbackQueryHandler(tools_help_button, pattern=r"tools_.*", run_async=True)
-
+    toolss_help_callback_handler = CallbackQueryHandler(toolss_help_button, pattern=r"toolss_.*", run_async=True)
     about_callback_handler = CallbackQueryHandler(yone_about_callback, pattern=r"yone_", run_async=True)
 
     settings_handler = CommandHandler("settings", get_settings, run_async=True)
@@ -313,6 +322,7 @@ def main():
     dispatcher.add_handler(admin_help_callback_handler)
     dispatcher.add_handler(user_help_callback_handler)
     dispatcher.add_handler(tools_help_callback_handler)
+    dispatcher.add_handler(toolss_help_callback_handler)
     dispatcher.add_handler(settings_callback_handler)
     dispatcher.add_handler(migrate_handler)
 
