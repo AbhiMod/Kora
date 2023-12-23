@@ -41,7 +41,7 @@ gtts
 python-barcode
 qrcode
 speedtest-cli
-git+https://github.com/yt-dlp/yt-dlp.git
+yt-dlp
 youtube-search-python
 pyrogram
 openai
