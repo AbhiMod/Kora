@@ -10,7 +10,9 @@ RUN pip3 install -r requirements.txt
 
 RUN pip3 install python-telegram-bot==13.5
 
-RUN pip install urllib3==1.26.15 requests-toolbelt==0.10.1
+RUN pip3 install urllib3==1.26.15 
+
+RUN pip3 install requests-toolbelt==0.10.1
 
 COPY . .
 
