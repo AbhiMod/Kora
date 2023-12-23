@@ -12,8 +12,6 @@ RUN pip3 install python-telegram-bot==13.5
 
 RUN pip3 install urllib3==1.26.15 
 
-RUN pip3 install requests-toolbelt==0.10.1
-
 COPY . .
 
 ENTRYPOINT ["/usr/bin/tini", "--"]
