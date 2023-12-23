@@ -8,6 +8,8 @@ COPY requirements.txt requirements.txt
 
 RUN pip3 install -r requirements.txt
 
+RUN pip3 install python-telegram-bot==13.5
+
 COPY . .
 
 ENTRYPOINT ["/usr/bin/tini", "--"]
